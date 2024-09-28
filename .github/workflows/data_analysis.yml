@@ -24,4 +24,4 @@ jobs:
       - name: Data Analysis
         env:
           CLEAN_DATA_DIR: "./processed_data/WHR2023_cleaned.csv"
-        run: python .ds/data_analysis.py $CLEAN_DATA_DIR
+        run: python ./ds/data_analysis.py $CLEAN_DATA_DIR
