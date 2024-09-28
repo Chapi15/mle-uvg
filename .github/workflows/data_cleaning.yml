@@ -15,8 +15,8 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-      # - name: Format
-      #   run: black ../../data_processing.py --line-length 88
+      - name: Format
+        run: black ./*/*.py --line-length 88
       - name: Data Processing
         env:
           RAW_DATA_DIR: "./raw/WHR2023.csv"
